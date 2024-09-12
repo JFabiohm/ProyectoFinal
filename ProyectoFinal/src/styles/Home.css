@@ -1,0 +1,113 @@
+.custom_NavBar {
+    background-color: #191c1fc9;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid orangered;
+}
+
+#move_Cards {
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+
+.carousel-container {
+    margin: 20px auto;
+    width: 90%;
+}
+
+.card-group {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 0.5rem;
+}
+
+.custom_carousel {
+    max-width: 85%;
+    /* Ajusta el ancho como desees */
+    margin: 0 auto;
+    /* Centra el carousel */
+}
+
+.custom_carousel img {
+    max-height: 400px;
+    /* Ajusta la altura máxima según sea necesario */
+    object-fit: cover;
+    /* Asegura que la imagen se ajuste sin distorsión */
+}
+
+h3 {
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: black;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: black;
+}
+
+.btn-outline-success {
+    --bs-btn-color: rgb(255, 255, 255);
+    --bs-btn-border-color: rgb(255, 255, 255);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: orangered;
+    --bs-btn-hover-border-color: orangered;
+    --bs-btn-focus-shadow-rgb: 25, 135, 84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: orangered;
+    --bs-btn-active-border-color: #B351FC;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: orangered;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: orangered;
+    --bs-gradient: none;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: orangered;
+    --bs-btn-border-color: rgb(3, 3, 3);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: orangered;
+    --bs-btn-hover-border-color: orangered;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: orangered;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: orangered;
+    --bs-btn-disabled-border-color: orangered;
+}
+
+.offcanvas-title {
+    margin-bottom: 0;
+    line-height: var(--bs-offcanvas-title-line-height);
+    border-bottom: 1px solid black;
+}
+
+.move_Cards {
+    display: flex;
+    margin-left: 70px;
+    margin-top: 70px;
+}
+
+.img_Cards {
+    width: 286px;
+    height: 200px;
+}

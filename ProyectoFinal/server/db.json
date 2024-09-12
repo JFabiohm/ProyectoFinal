@@ -1,0 +1,13 @@
+{
+    "users": [
+      {
+        "id": "0710",
+        "name": "fabio",
+        "email": "kawaighm@gmail.com",
+        "password": "fabiohm"
+      }
+    ],
+    "productos": [],
+    
+    "cart":[]
+}
