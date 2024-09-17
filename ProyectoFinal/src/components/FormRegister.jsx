@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { postRegister } from "../../services/postRegister";
 import { getRegister } from "../../services/getRegister";
+import {Link} from 'react-router-dom';
 
 function FormRegister() {
   const [name, setName] = useState('');

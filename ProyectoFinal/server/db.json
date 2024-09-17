@@ -1,13 +1,43 @@
 {
-    "users": [
-      {
-        "id": "0710",
-        "name": "fabio",
-        "email": "kawaighm@gmail.com",
-        "password": "fabiohm"
-      }
-    ],
-    "productos": [],
-    
-    "cart":[]
+  "users": [
+    {
+      "id": "0710",
+      "name": "fabio",
+      "email": "kawaighm@gmail.com",
+      "password": "fabiohm"
+    },
+    {
+      "id": "74a4",
+      "name": "fabio",
+      "email": "fabio@gmail.com",
+      "password": "fabiohmkvf"
+    }
+  ],
+  "productos": [],
+  "cartas": [
+    {
+      "id": "0988",
+      "title": "Gonzo y su orca",
+      "description": "Gonzo es un cachero que viola orcas marinas en la noche, siempre lo acompañan sus fieles mamadores los cuales son: Thylink El mas cachero, Fabio El mas soplador de gaitas. aprovecha esta promocion a tan solo $10.99",
+      "imageLink": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t1.6435-1/43033974_706199819740903_6772561361571414016_n.jpg?stp=dst-jpg_s200x200&_nc_cat=110&ccb=1-7&_nc_sid=e4545e&_nc_ohc=m28czJlcxdAQ7kNvgHKsi3V&_nc_ht=scontent.fsyq3-1.fna&_nc_gid=AjUQwjxxpbu4Nci6RVbsUjR&oh=00_AYC6WnCectFMSrpqh65qYZ9u0ND1znG4RRXSz4JI79oQKQ&oe=670FE8C8"
+    },
+    {
+      "id": "9803",
+      "title": "Jose Daniel",
+      "description": "Cuando hablamos de la mas perra del grupo siempre nos referimos a el. Su habilidad se basa en dar mamadas gratis en los baños de fwd, es alguien que no sabe hacer sacrificios en la vida en otras palabras un vago de mierda. Esta la puedes adquirir a tan solo $0.99",
+      "imageLink": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t39.30808-6/309478500_1179844586079247_1989295469131112140_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=rDiyCfxvC2MQ7kNvgFgKOqW&_nc_ht=scontent.fsyq3-1.fna&oh=00_AYDo-eH0Sii6El62az_7oDbew5b11uRBo9F4MxAOQo5OIQ&oe=66EE63DC"
+    },
+    {
+      "id": "a4c4",
+      "title": "El Presi",
+      "description": "Le gusta ser cachero y arrimarla cada que pueda, tambien le gusta Superman y que gonzo le de como rata en balde en la ofi, ama hacer caminatas nocturnas. Su principal habilidad es es cargarse en la madre de Eric. Su precio es de $10.99",
+      "imageLink": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t1.6435-9/32327483_1721783907858408_1366901894894583808_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=53a332&_nc_ohc=r-itfTFbf4oQ7kNvgGT4f9A&_nc_ht=scontent.fsyq3-1.fna&_nc_gid=Ac0MUlcuHcA-RrKfusO50jt&oh=00_AYA_FTS5gFaD1KeZ14iLuiknLQqyvitx2CXK7seGEUfRxQ&oe=67100A2E"
+    },
+    {
+      "id": "fffb",
+      "title": "que rico ser gay",
+      "description": "pobre un pene y me encantoooooooooooooooooooooooooooooooooooooo , confirmado me gustoo  muchooooooooo siiiiiiia ahhhhhhhhhhhhh",
+      "imageLink": "https://scontent.fsyq3-1.fna.fbcdn.net/v/t31.18172-8/10551559_707786195924856_7250969035126090567_o.jpg?_nc_cat=107&ccb=1-7&_nc_sid=53a332&_nc_ohc=jn-koj0OaSIQ7kNvgGpBY3W&_nc_ht=scontent.fsyq3-1.fna&_nc_gid=AfeF-bIy_Y9db6VPRLxSO1Y&oh=00_AYB5xyb-GNYOB0E-JlaRDhW2GdO_vMbk4JUbzqODPV0r9w&oe=670FE428"
+    }
+  ]
 }

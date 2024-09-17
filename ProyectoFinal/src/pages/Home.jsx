@@ -1,8 +1,12 @@
 import FormHome from "../components/FormHome";
+import  FormNav  from "../components/FormNav";
 
 function Home() {
     return(
-        <FormHome />
+        <div>
+            <FormNav />
+            <FormHome />
+        </div>
     )
     
 }
