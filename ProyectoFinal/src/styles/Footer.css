@@ -73,3 +73,8 @@
     border-bottom:1px solid orangered;
 
 }
+.logo_Code{
+    display: flex;
+    width: 150px;
+    height: 150px;
+}

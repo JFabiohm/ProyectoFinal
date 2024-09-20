@@ -13,7 +13,6 @@ function FormProductos() {
   const [product, setProduct] = useState(null);
 
   const handleSaveClick = async () => {
-    // Validation
     if (!titulo || !descripcion || !imgLink || !precio) {
       alert("Por favor, completa todos los campos.");
       return;
