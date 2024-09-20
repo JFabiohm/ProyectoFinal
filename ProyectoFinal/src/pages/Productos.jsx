@@ -1,5 +1,6 @@
 import FormProductos from "../components/FormProductos";
 import FormNav from "../components/FormNav";
+import FormFooter from "../components/FormFooter"
 
 
 function Productos() {
@@ -8,6 +9,7 @@ function Productos() {
         <div>
             <FormNav/>
           <FormProductos/>
+          <FormFooter/>
         </div>
 
     )

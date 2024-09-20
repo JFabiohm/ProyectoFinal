@@ -3,29 +3,51 @@ import { Button, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/Productos.css";
 import { postProductos } from '../../services/postProductos'; 
+import { encode } from 'base64-arraybuffer';
 
 function FormProductos() {
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [imageLink, setImageLink] = useState("");
+  const [titulo, settitulo] = useState("");
+  const [descripcion, setdescripcion] = useState("");
+  const [imgLink, setimgLink] = useState("");
+  const [precio, setprecio] = useState(""); 
   const [product, setProduct] = useState(null);
 
   const handleSaveClick = async () => {
+    // Validation
+    if (!titulo || !descripcion || !imgLink || !precio) {
+      alert("Por favor, completa todos los campos.");
+      return;
+    }
+
     const newProduct = {
-      title,
-      description,
-      imageLink,
+      titulo,
+      descripcion,
+      imgLink,
+      precio, 
     };
 
     try {
       const savedProduct = await postProductos(newProduct);
-      setProduct(savedProduct); // Aquí se debería recibir el producto guardado
-      setTitle("");
-      setDescription("");
-      setImageLink("");
+      setProduct(savedProduct);
+      settitulo("");
+      setdescripcion("");
+      setimgLink("");
+      setprecio(""); 
       console.log("Producto guardado exitosamente");
     } catch (error) {
       console.error("Error al guardar el producto:", error);
+    }
+  };
+
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        const base64String = encode(reader.result);
+        setimgLink(base64String); // Actualiza el estado con el link base64
+      };
+      reader.readAsArrayBuffer(file);
     }
   };
 
@@ -35,42 +57,66 @@ function FormProductos() {
         <p className="title">Agregar Productos</p>
         <form>
           <div className="form_group">
-            <label className="sub_title" htmlFor="name">
+            <label className="sub_title" htmlFor="titulo">
               Titulo
             </label>
             <input
               placeholder="Titulo"
               className="form_style"
               type="text"
-              id="name"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
+              id="titulo"
+              value={titulo}
+              onChange={(e) => settitulo(e.target.value)}
             />
           </div>
           <div className="form_group">
-            <label className="sub_title" htmlFor="txt">
+            <label className="sub_title" htmlFor="descripcion">
               Descripcion
             </label>
             <input
               placeholder="Describe la imagen"
               className="form_style"
               type="text"
-              id="description"
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
+              id="descripcion"
+              value={descripcion}
+              onChange={(e) => setdescripcion(e.target.value)}
             />
           </div>
           <div className="form_group">
-            <label className="sub_title" htmlFor="link">
+            <label className="sub_title" htmlFor="imgLink">
               Link de la imagen
             </label>
             <input
               placeholder="Link"
               className="form_style"
               type="text"
-              id="link"
-              value={imageLink}
-              onChange={(e) => setImageLink(e.target.value)}
+              id="imgLink"
+              value={imgLink}
+              onChange={(e) => setimgLink(e.target.value)}
+            />
+          </div>
+          <div className="form_group">
+            <label className="sub_title" htmlFor="fileInput">
+              Subir Imagen
+            </label>
+            <input
+              type="file"
+              id="fileInput"
+              accept="image/*"
+              onChange={handleImageUpload}
+            />
+          </div>
+          <div className="form_group">
+            <label className="sub_title" htmlFor="precio">
+              Precio
+            </label>
+            <input
+              placeholder="$0"
+              className="form_style"
+              type="text"
+              id="precio"
+              value={precio}
+              onChange={(e) => setprecio(e.target.value)}
             />
           </div>
           <div>
@@ -90,11 +136,14 @@ function FormProductos() {
       {product && (
         <div className="preview_area">
           <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={product.imageLink} />
+            <Card.Img variant="top" src={product.imgLink} />
             <Card.Body>
-              <Card.Title>{product.title}</Card.Title>
+              <Card.Title>{product.titulo}</Card.Title>
               <Card.Text>
-                {product.description}
+                {product.descripcion}
+              </Card.Text>
+              <Card.Text>
+                Precio: {product.precio}
               </Card.Text>
               <Button variant="primary">Ver más</Button>
             </Card.Body>
@@ -106,5 +155,7 @@ function FormProductos() {
 }
 
 export default FormProductos;
+
+
 
 

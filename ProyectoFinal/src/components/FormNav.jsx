@@ -10,8 +10,8 @@ import {
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import Logo from "../img/logo.jpg";
-import {Link} from 'react-router-dom';
+import Logo from "../img/logo2.jpeg";
+import { Link } from "react-router-dom";
 
 function NavbarComponent() {
   const [show, setShow] = useState(false);
@@ -27,14 +27,26 @@ function NavbarComponent() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
-            <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
-              <Nav.Link as={Link} to="/Home" className="text-light1">Home</Nav.Link>
-              <Nav.Link as={Link} to="/Login" className="text-light1">Login</Nav.Link>
-              <NavDropdown title="Other" id="navbarScrollingDropdown">
-                <NavDropdown.Item><Nav.Link as={Link} to="/Productos" className="text-light1">Productos</Nav.Link></NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item>Something else here</NavDropdown.Item>
-              </NavDropdown>
+            <Nav
+              className="me-auto my-2 my-lg-0"
+              style={{ maxHeight: "100px" }}
+              navbarScroll
+            >
+              <Nav.Link as={Link} to="/Home" className="text-light1">
+                Home
+              </Nav.Link>
+              <Nav.Link as={Link} to="/Login" className="text-light1">
+                Login
+              </Nav.Link>
+
+              <Nav.Link as={Link} to="/Productos" className="text-light1">
+                Productos
+              </Nav.Link>
+
+              <Nav.Link as={Link} to="/AboutUs" className="text-light1">
+                About Us
+              </Nav.Link>
+
               <Button variant="primary" onClick={handleShow}>
                 <i className="bi bi-cart2"></i>
               </Button>
@@ -58,13 +70,10 @@ function NavbarComponent() {
             <i className="bi bi-cart2"> Carrito</i>
           </Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body>
-         
-        </Offcanvas.Body>
+        <Offcanvas.Body></Offcanvas.Body>
       </Offcanvas>
     </>
   );
 }
 
 export default NavbarComponent;
-

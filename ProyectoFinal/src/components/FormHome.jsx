@@ -49,15 +49,13 @@ function FormHome() {
         <Carousel.Item>
           <img className="d-block w-100" src={Olla} alt="Olla inoxidable" />
           <Carousel.Caption>
-            <h3>Olla inoxidable</h3>
-            <p>Esta olla a un precio razonable</p>
+          
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img className="d-block w-100" src={mitad} alt="Mitad" />
           <Carousel.Caption>
-            <h3>Mitad</h3>
-            <p>Deliciosa mitad de pastel</p>
+            
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -67,8 +65,7 @@ function FormHome() {
             alt="Queque de Fresa"
           />
           <Carousel.Caption>
-            <h3>Queque de Fresa</h3>
-            <p>Un sabor dulce y fresco</p>
+            °
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -78,8 +75,7 @@ function FormHome() {
             alt="Queque de Navidad"
           />
           <Carousel.Caption>
-            <h3>Queque de Navidad</h3>
-            <p>Perfecto para las fiestas</p>
+            
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
@@ -104,16 +100,19 @@ function FormHome() {
           {products.map((product, index) => (
             <div key={index} className="product_card">
               <img
-                src={product.imageLink}
-                alt={product.title}
+                src={product.imgLink}
+                alt={product.titulo}
                 className="product_image"
               />
               <div className="product_info">
-                <h3 className="product_title">{product.title}</h3>
-                <p className="product_description">{product.description}</p>
-                <Button onClick={() => handleAddToCart(product.title)}>
+                <h3 className="product_title">{product.titulo}</h3>
+                <p className="product_description">{product.descripcion}</p>
+                <Button onClick={() => handleAddToCart(product.titulo)}>
                 <i className="bi bi-cart2">Añade al carrito</i>
+                
                 </Button>
+                <br />
+                <p className="product_price ">${product.precio}</p>
               </div>
             </div>
           ))}

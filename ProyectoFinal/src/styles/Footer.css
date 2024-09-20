@@ -1,0 +1,75 @@
+.footer {
+    background-color: #343a40;
+    padding: 40px 0;
+    color: #ffffff;
+}
+
+.footer h5 {
+    font-size: 1.25rem;
+    color: #f8f9fa;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#whatsapp:hover {
+    background-color: rgba(0, 200, 83, 0.842);
+}
+
+#instagram:hover {
+    background-color: rgba(220, 20, 60, 0.822);
+}
+
+#facebook:hover {
+    background-color: rgba(42, 76, 148, 0.842);
+}
+#address:hover{
+    background-color: rgba(255, 166, 0, 0.808);
+}
+
+.footer-icon-img {
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.footer-icon-text {
+    font-weight: 500;
+}
+
+.footer-icon-col {
+    margin: 0 10px;
+}
+
+.footer .list-unstyled li {
+    margin: 10px 0;
+}
+
+.footer .text-center p {
+    font-size: 0.8rem;
+    margin-top: 20px;
+    color: #adb5bd;
+}
+.text-white{
+    text-decoration: none;
+
+}
+.text-white:hover{
+    border-bottom:1px solid orangered;
+
+}

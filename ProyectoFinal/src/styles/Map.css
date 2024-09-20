@@ -1,0 +1,9 @@
+.gps{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 30px;
+    width: 1350px;
+    height: 400px;
+}
+

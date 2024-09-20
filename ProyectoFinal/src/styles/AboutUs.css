@@ -1,0 +1,18 @@
+.text_Parrafo{
+    display: flex;
+    width: 800px;
+    margin-left: 250px;
+    margin-top: 50px;
+    
+}
+
+.text_Titulo{
+    display: flex;
+    margin-left: 120px;
+    margin-top: 60px;
+}
+.subtitulo {
+    display: flex;
+    margin-top: 150px;
+    margin-left: 500px;
+}
